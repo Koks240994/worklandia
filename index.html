@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkLandia — Фриланс платформа</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }
+    header, section, footer {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    h1 { color: #333; }
+    .button {
+      background: #0077ff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WorkLandia</h1>
+  <p>Работы под ключ. Заказчики и фрилансеры — на одной платформе.</p>
+  <a class="button" href="#order">Разместить заказ</a>
+  <a class="button" href="#freelancer">Стать исполнителем</a>
+</header>
+
+<section>
+  <h2>Категории услуг</h2>
+  <ul>
+    <li>Маркетинг</li>
+    <li>Копирайтинг</li>
+    <li>SMM</li>
+    <li>Переводы</li>
+    <li>Дизайн</li>
+    <li>Тексты</li>
+  </ul>
+</section>
+
+<section id="order">
+  <h2>Разместить заказ</h2>
+  <form action="https://formspree.io/f/your-id-here" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required />
+    <textarea name="task" placeholder="Описание задачи" required></textarea>
+    <input type="text" name="category" placeholder="Категория (например: копирайтинг)" required />
+    <input type="email" name="email" placeholder="Ваш email" required />
+    <button type="submit" class="button">Отправить заказ</button>
+  </form>
+</section>
+
+<section id="freelancer">
+  <h2>Стать исполнителем</h2>
+  <form action="https://formspree.io/f/your-id-here" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required />
+    <input type="text" name="skills" placeholder="Специализация (дизайн, тексты и т.д.)" required />
+    <textarea name="portfolio" placeholder="Примеры работ или ссылки на них" required></textarea>
+    <input type="email" name="email" placeholder="Контактный email" required />
+    <button type="submit" class="button">Отправить анкету</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 WorkLandia | Email: Ksyusha24kisa@mail.ru</p>
+</footer>
+
+</body>
+</html>
